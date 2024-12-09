@@ -4,7 +4,7 @@
 <p align="center" style="font-size: 1.5em;">
     <a href="https://huggingface.co/datasets/nanote/algebra_misconceptions">HuggingFace</a> 
 
-This dataset supports the research described in the paper [A Benchmark for Math Misconceptions: Bridging Gaps in Middle School Algebra with AI-Supported Instruction](https://arxiv.org/abs/your-link) by Nancy Otero, Stefania Druga, and Andrew Lan.
+This dataset supports the research described in the paper [A Benchmark for Math Misconceptions: Bridging Gaps in Middle School Algebra with AI-Supported Instruction](https://arxiv.org/pdf/2412.03765v1) by Nancy Otero, Stefania Druga, and Andrew Lan.
 
 ### **Overview**
 The **MaE (Math Misconceptions and Errors)** dataset is a collection of 220 diagnostic examples designed by math learning researchers that represent 55 common algebra misconceptions among middle school students. It aims to provide insights into student errors and misconceptions in algebra, supporting the development of AI-enhanced educational tools that can improve math instruction and learning outcomes.
