@@ -46,6 +46,30 @@ This reads `data/raw/recommendation_dataset_original.xlsx` and creates:
 - `data/splits/pilot_20.json`
 - `data/splits/full_55.json`
 
+## First Workflow: Misconception First
+
+The first experiment stage diagnoses the misconception before any remediation recommendation is generated.
+
+Workflow doc:
+
+```text
+docs/misconception_first_workflow.md
+```
+
+Build pilot prompt inputs:
+
+```bash
+python remediation-experiments/scripts/build_misconception_first_inputs.py
+```
+
+Default generated output folder:
+
+```text
+remediation-experiments/outputs/misconception_first/pilot_20/
+```
+
+This workflow creates model-ready prompt inputs in `inputs/prompt_inputs.jsonl`, then reserves separate folders for raw model responses, parsed diagnoses, scored diagnosis results, and logs.
+
 ## Initial Experimental Conditions
 
 - Baseline prompt: ask the model to help the student.
@@ -66,4 +90,3 @@ Primary dimensions:
 - Use of representations
 - Attention to student reasoning
 - Pedagogical usefulness
-
