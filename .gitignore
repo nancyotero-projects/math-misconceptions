@@ -1,3 +1,4 @@
 __pycache__/
+.env
 remediation-experiments/outputs/misconception_first/*/
 !remediation-experiments/outputs/misconception_first/.gitkeep

@@ -15,13 +15,32 @@ import argparse
 import json
 import os
 import time
+import urllib.error
+import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
 
+REPO_ROOT = Path(__file__).resolve().parents[2]
 EXPERIMENT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_RUN_ID = "paper_repeated_random_100"
 DEFAULT_OUTPUT_ROOT = EXPERIMENT_ROOT / "outputs" / "misconception_first"
+OPENAI_CHAT_COMPLETIONS_URL = "https://api.openai.com/v1/chat/completions"
+
+
+def load_dotenv(path: Path) -> None:
+    if not path.exists():
+        return
+
+    for line in path.read_text(encoding="utf-8").splitlines():
+        stripped = line.strip()
+        if not stripped or stripped.startswith("#") or "=" not in stripped:
+            continue
+        key, value = stripped.split("=", 1)
+        key = key.strip()
+        value = value.strip().strip('"').strip("'")
+        if key and key not in os.environ:
+            os.environ[key] = value
 
 
 def load_jsonl(path: Path) -> list[dict]:
@@ -66,28 +85,37 @@ def call_openai(
     temperature: float,
     max_tokens: int,
 ) -> str:
-    try:
-        import openai
-    except ImportError as exc:
-        raise RuntimeError(
-            "The openai Python package is not installed. Run `pip install -r requirements.txt` "
-            "in the repository environment before model calls."
-        ) from exc
-
-    response = openai.ChatCompletion.create(
-        model=model,
-        messages=[
+    payload = {
+        "model": model,
+        "messages": [
             {
                 "role": "system",
                 "content": "You are a math expert specialized in diagnosing student misconceptions.",
             },
             {"role": "user", "content": prompt},
         ],
-        temperature=temperature,
-        max_tokens=max_tokens,
-        frequency_penalty=0.0,
+        "temperature": temperature,
+        "max_tokens": max_tokens,
+        "frequency_penalty": 0.0,
+    }
+    request = urllib.request.Request(
+        OPENAI_CHAT_COMPLETIONS_URL,
+        data=json.dumps(payload).encode("utf-8"),
+        headers={
+            "Authorization": f"Bearer {os.environ['OPENAI_API_KEY']}",
+            "Content-Type": "application/json",
+        },
+        method="POST",
     )
-    return response.choices[0].message["content"].strip()
+
+    try:
+        with urllib.request.urlopen(request, timeout=120) as response:
+            data = json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        body = exc.read().decode("utf-8", errors="replace")
+        raise RuntimeError(f"OpenAI API HTTP {exc.code}: {body}") from exc
+
+    return data["choices"][0]["message"]["content"].strip()
 
 
 def main() -> None:
@@ -103,9 +131,11 @@ def main() -> None:
     parser.add_argument("--no-resume", action="store_true")
     args = parser.parse_args()
 
+    load_dotenv(REPO_ROOT / ".env")
+
     if not os.environ.get("OPENAI_API_KEY"):
         raise SystemExit(
-            "OPENAI_API_KEY is not set. Set it before running model calls."
+            "OPENAI_API_KEY is not set. Set it in your shell or add it to a local .env file."
         )
 
     output_dir = Path(args.output_root) / args.run_id
