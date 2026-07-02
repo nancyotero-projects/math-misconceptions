@@ -211,6 +211,25 @@ Recommended fields:
 - `created_at`
 - `temperature`
 
+OpenAI runner:
+
+```bash
+python remediation-experiments/scripts/run_misconception_first_openai.py \
+  --model gpt-4-turbo \
+  --limit 2
+```
+
+Use `--limit 2` for a smoke test. Remove `--limit` for the full run.
+
+Before running model calls, install dependencies and set the API key in your shell:
+
+```bash
+pip install -r requirements.txt
+export OPENAI_API_KEY="..."
+```
+
+The runner resumes by default. If `model_responses.jsonl` already contains successful responses for a model, those prompt batches are skipped on the next run.
+
 ## Step 5: Parsed Diagnosis Output
 
 Parse each batch response into one row per test example.
@@ -272,4 +291,3 @@ This produces:
 ```
 
 Use the full 100-trial run for reportable results.
-
