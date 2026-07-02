@@ -56,19 +56,19 @@ Workflow doc:
 docs/misconception_first_workflow.md
 ```
 
-Build pilot prompt inputs:
+Build paper-style prompt inputs using the same repeated-random diagnosis design as the MaE paper:
 
 ```bash
-python remediation-experiments/scripts/build_misconception_first_inputs.py
+python remediation-experiments/scripts/build_misconception_first_paper_inputs.py
 ```
 
 Default generated output folder:
 
 ```text
-remediation-experiments/outputs/misconception_first/pilot_20/
+remediation-experiments/outputs/misconception_first/paper_repeated_random_100/
 ```
 
-This workflow creates model-ready prompt inputs in `inputs/prompt_inputs.jsonl`, then reserves separate folders for raw model responses, parsed diagnoses, scored diagnosis results, and logs.
+This workflow creates model-ready prompt batches in `inputs/prompt_batches.jsonl`, saves the randomized split audit trail in `inputs/trial_assignments.csv`, then reserves separate folders for raw model responses, parsed diagnoses, scored diagnosis results, and logs.
 
 ## Initial Experimental Conditions
 
