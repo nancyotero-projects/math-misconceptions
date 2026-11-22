@@ -1,0 +1,582 @@
+{
+  "reviewed_on": "2026-11-22",
+  "records_reviewed": 220,
+  "misconceptions_reviewed": 55,
+  "method": "Reviewed each diagnostic question, source answers and stored explanation against Common Core scope. Grade reflects the task as written, not a more advanced method supplied in the answer or the broad misconception title. Original image files were not visually re-audited; grade judgments use question text, image descriptions and source answers. Original content is preserved. This is an analyst curriculum review, not independent teacher validation.",
+  "grade_changes": 16,
+  "standard_mapping_changes": 26,
+  "changes": [
+    {
+      "id": "MaE02",
+      "example": 4,
+      "previous_grades": [
+        "4"
+      ],
+      "reviewed_grades": [
+        "6"
+      ],
+      "previous_codes": [
+        "4.NF.A.1"
+      ],
+      "reviewed_codes": [
+        "6.NS.B.4"
+      ],
+      "reason": "Reducing 24/36 fully can be grounded in finding the greatest common factor of two numbers below 100. Denominator 36 is outside grade 4's stated denominator list. Grade 6 is a conservative GCF-based placement, not a claim that reduction cannot be taught earlier."
+    },
+    {
+      "id": "MaE06",
+      "example": 2,
+      "previous_grades": [
+        "5"
+      ],
+      "reviewed_grades": [
+        "6"
+      ],
+      "previous_codes": [
+        "5.NF.A.1"
+      ],
+      "reviewed_codes": [
+        "6.NS.B.4"
+      ],
+      "reason": "Determining that 4/9 is irreducible uses the absence of a common factor. Grade 5 fraction-addition code did not match this task; grade 6 GCF is a closer formal match. Denominator 9 is outside grade 4's stated list."
+    },
+    {
+      "id": "MaE21",
+      "example": 2,
+      "previous_grades": [
+        "3"
+      ],
+      "reviewed_grades": [
+        "2"
+      ],
+      "previous_codes": [
+        "3.NBT.A.2"
+      ],
+      "reviewed_codes": [
+        "2.NBT.B.5"
+      ],
+      "reason": "100−40 is addition/subtraction within 100, a grade 2 expectation; it does not require grade 3 subtraction within 1000."
+    },
+    {
+      "id": "MaE22",
+      "example": 1,
+      "previous_grades": [
+        "7"
+      ],
+      "reviewed_grades": [
+        "6"
+      ],
+      "previous_codes": [
+        "7.NS.A.2.d"
+      ],
+      "reviewed_codes": [
+        "6.NS.B.3"
+      ],
+      "reason": "The task asks for decimal division, not an explanation of rational-number decimal expansions. Grade 6 decimal computation is the better primary tag. The stored four-place approximation has no specified rounding rule; grade 7 repeating-decimal understanding is related, not required by the prompt."
+    },
+    {
+      "id": "MaE22",
+      "example": 2,
+      "previous_grades": [
+        "7"
+      ],
+      "reviewed_grades": [
+        "6"
+      ],
+      "previous_codes": [
+        "7.NS.A.2.d"
+      ],
+      "reviewed_codes": [
+        "6.NS.B.3"
+      ],
+      "reason": "The task asks for decimal division, not a proof that decimals repeat. Grade 6 decimal computation is the better primary tag. The stored approximation has no specified rounding rule."
+    },
+    {
+      "id": "MaE23",
+      "example": 2,
+      "previous_grades": [
+        "6"
+      ],
+      "reviewed_grades": [
+        "6"
+      ],
+      "previous_codes": [
+        "6.RP.A.3"
+      ],
+      "reviewed_codes": [
+        "6.NS.A.1"
+      ],
+      "reason": "Finding the whole from 6 being 2/5 of it requires 6÷(2/5), a grade 6 fraction-division word problem."
+    },
+    {
+      "id": "MaE23",
+      "example": 4,
+      "previous_grades": [
+        "7"
+      ],
+      "reviewed_grades": [
+        "6"
+      ],
+      "previous_codes": [
+        "7.RP.A.3"
+      ],
+      "reviewed_codes": [
+        "6.RP.A.3"
+      ],
+      "reason": "Compare ratios of each plant's increase to its initial height. The task does not ask for percentages or a multistep percent calculation, so grade 6 ratio reasoning suffices."
+    },
+    {
+      "id": "MaE26",
+      "example": 2,
+      "previous_grades": [
+        "6"
+      ],
+      "reviewed_grades": [
+        "6"
+      ],
+      "previous_codes": [
+        "6.RP.A.1"
+      ],
+      "reviewed_codes": [
+        "6.EE.A.2.a"
+      ],
+      "reason": "The expression (1/3)×a can be written a/3. This is primarily grade 6 expression writing. Calling it a ratio without naming two quantities makes the prompt ambiguous; retain grade 6 provisionally."
+    },
+    {
+      "id": "MaE27",
+      "example": 3,
+      "previous_grades": [
+        "6"
+      ],
+      "reviewed_grades": [
+        "6"
+      ],
+      "previous_codes": [
+        "6.RP.A.3"
+      ],
+      "reviewed_codes": [
+        "6.NS.A.1"
+      ],
+      "reason": "This is the same unknown-whole fraction-division task as MaE23 example 2."
+    },
+    {
+      "id": "MaE27",
+      "example": 4,
+      "previous_grades": [
+        "7"
+      ],
+      "reviewed_grades": [
+        "5"
+      ],
+      "previous_codes": [
+        "7.EE.B.3"
+      ],
+      "reviewed_codes": [
+        "5.NBT.B.7",
+        "5.MD.A.1"
+      ],
+      "reason": "Subtract the fixed payment, divide by $0.10, then convert cups to quarts. Decimal operations and within-system conversions are grade 5; a grade 7 algebraic solution is not requested."
+    },
+    {
+      "id": "MaE31",
+      "example": 2,
+      "previous_grades": [
+        "3"
+      ],
+      "reviewed_grades": [
+        "2"
+      ],
+      "previous_codes": [
+        "3.OA.D.8"
+      ],
+      "reviewed_codes": [
+        "2.NBT.B.5",
+        "2.NBT.B.6"
+      ],
+      "reason": "Add the four known addends (2,5,4,6), then subtract their total from 23. Grade 2 addition/subtraction is sufficient; the original grade 3 word-problem code was not a close match to this bare number sentence."
+    },
+    {
+      "id": "MaE37",
+      "example": 1,
+      "previous_grades": [
+        "3"
+      ],
+      "reviewed_grades": [
+        "4"
+      ],
+      "previous_codes": [
+        "3.MD.B.3"
+      ],
+      "reviewed_codes": [
+        "4.NBT.B.4"
+      ],
+      "reason": "Computing 8625−8125 uses grade 4 multi-digit subtraction. Scaled-bar-graph reading starts in grade 3, but thousands and the broken-axis explanation make this more than a direct grade 3 task. No grade-specific Common Core standard explicitly requires interpreting a broken axis; grade 4 is a provisional extension placement."
+    },
+    {
+      "id": "MaE37",
+      "example": 2,
+      "previous_grades": [
+        "6"
+      ],
+      "reviewed_grades": [
+        "6"
+      ],
+      "previous_codes": [
+        "6.NS.C.8"
+      ],
+      "reviewed_codes": [
+        "6.G.A.3",
+        "6.NS.C.6.c"
+      ],
+      "reason": "Plotting given vertices and identifying the resulting polygon directly matches grade 6 coordinate geometry."
+    },
+    {
+      "id": "MaE37",
+      "example": 3,
+      "previous_grades": [
+        "3"
+      ],
+      "reviewed_grades": [
+        "4"
+      ],
+      "previous_codes": [
+        "3.MD.B.3"
+      ],
+      "reviewed_codes": [
+        "4.NBT.B.4"
+      ],
+      "reason": "Same task as MaE37 example 1: grade 4 arithmetic plus a broken-axis graph-reading extension. This is not an exact grade 4 graph standard."
+    },
+    {
+      "id": "MaE37",
+      "example": 4,
+      "previous_grades": [
+        "6"
+      ],
+      "reviewed_grades": [
+        "6"
+      ],
+      "previous_codes": [
+        "6.NS.C.8"
+      ],
+      "reviewed_codes": [
+        "6.G.A.3",
+        "6.NS.C.6.c"
+      ],
+      "reason": "Plotting given vertices and identifying the resulting polygon directly matches grade 6 coordinate geometry."
+    },
+    {
+      "id": "MaE39",
+      "example": 4,
+      "previous_grades": [
+        "HS"
+      ],
+      "reviewed_grades": [
+        "6"
+      ],
+      "previous_codes": [
+        "HSF.LE.A.2"
+      ],
+      "reviewed_codes": [
+        "6.EE.A.1"
+      ],
+      "reason": "The question asks for the number after ten doublings, 2^10, rather than a general exponential function or linear/exponential comparison. Grade 6 numerical exponents suffice, assuming each cut halves every existing piece."
+    },
+    {
+      "id": "MaE40",
+      "example": 4,
+      "previous_grades": [
+        "8"
+      ],
+      "reviewed_grades": [
+        "8"
+      ],
+      "previous_codes": [
+        "8.F.B.5"
+      ],
+      "reviewed_codes": [
+        "8.EE.B.6"
+      ],
+      "reason": "The source answer concerns the sign of the coefficient in y=mx+b. Grade 8 linear-equation/slope reasoning is closer than a purely qualitative graph description."
+    },
+    {
+      "id": "MaE42",
+      "example": 1,
+      "previous_grades": [
+        "7"
+      ],
+      "reviewed_grades": [
+        "3"
+      ],
+      "previous_codes": [
+        "7.RP.A.2.a"
+      ],
+      "reviewed_codes": [
+        "3.OA.D.8"
+      ],
+      "reason": "With equal speeds the lead stays 9−3=6 laps; then 15+6=21. This is a two-step whole-number word problem. The family involves proportionality, but the example does not explicitly request formal ratio analysis."
+    },
+    {
+      "id": "MaE42",
+      "example": 3,
+      "previous_grades": [
+        "8"
+      ],
+      "reviewed_grades": [
+        "HS"
+      ],
+      "previous_codes": [
+        "8.EE.C.8.c"
+      ],
+      "reviewed_codes": [
+        "HSA.CED.A.2",
+        "HSA.CED.A.3"
+      ],
+      "reason": "Do not assume the two people took the same number of rides. As written, 10+2x=6+3y is one constraint on two independent ride counts. Formal modeling of viable pairs is a high-school best fit; numerical trial pairs are possible earlier. The former grade 8 simultaneous-equations code assumed an unstated second constraint."
+    },
+    {
+      "id": "MaE43",
+      "example": 1,
+      "previous_grades": [
+        "6"
+      ],
+      "reviewed_grades": [
+        "6"
+      ],
+      "previous_codes": [
+        "6.NS.C.8"
+      ],
+      "reviewed_codes": [
+        "6.G.A.3",
+        "6.NS.C.6.c"
+      ],
+      "reason": "Plotting given vertices and identifying the resulting polygon directly matches grade 6 coordinate geometry."
+    },
+    {
+      "id": "MaE47",
+      "example": 4,
+      "previous_grades": [
+        "7"
+      ],
+      "reviewed_grades": [
+        "6"
+      ],
+      "previous_codes": [
+        "7.EE.B.4.a"
+      ],
+      "reviewed_codes": [
+        "6.EE.B.6"
+      ],
+      "reason": "The question asks whether renaming the unknown changes the solution; it does not ask students to solve both equations. Grade 6 variable meaning is the primary demand. Actual two-step solving is grade 7."
+    },
+    {
+      "id": "MaE48",
+      "example": 2,
+      "previous_grades": [
+        "8"
+      ],
+      "reviewed_grades": [
+        "6"
+      ],
+      "previous_codes": [
+        "8.EE.C.7"
+      ],
+      "reviewed_codes": [
+        "6.EE.B.6",
+        "6.EE.B.7"
+      ],
+      "reason": "Use the given s+t=r to recognize r+r=30 and hence r=15. This simple variable/one-step-equation reasoning does not require a grade 8 system-solving procedure; substitution of an expression is a conceptual extension of the cited grade 6 standards."
+    },
+    {
+      "id": "MaE51",
+      "example": 3,
+      "previous_grades": [
+        "5"
+      ],
+      "reviewed_grades": [
+        "4"
+      ],
+      "previous_codes": [
+        "5.NF.A.1"
+      ],
+      "reviewed_codes": [
+        "4.NF.A.1"
+      ],
+      "reason": "The question asks what equality means and whether 1/3 and 4/12 are equal. Fraction equivalence is grade 4. The unlike-denominator sum is already displayed, not asked to be computed."
+    },
+    {
+      "id": "MaE55",
+      "example": 1,
+      "previous_grades": [
+        "6"
+      ],
+      "reviewed_grades": [
+        "6"
+      ],
+      "previous_codes": [
+        "6.EE.A.3"
+      ],
+      "reviewed_codes": [
+        "6.EE.A.3",
+        "6.EE.B.7"
+      ],
+      "reason": "Combine like terms using equivalent expressions, then solve px=q with a nonnegative rational solution. Both steps are grade 6."
+    },
+    {
+      "id": "MaE55",
+      "example": 2,
+      "previous_grades": [
+        "6"
+      ],
+      "reviewed_grades": [
+        "6"
+      ],
+      "previous_codes": [
+        "6.EE.A.3"
+      ],
+      "reviewed_codes": [
+        "6.EE.A.3",
+        "6.EE.B.7"
+      ],
+      "reason": "Combine like terms using equivalent expressions, then solve px=q with a nonnegative rational solution. Both steps are grade 6."
+    },
+    {
+      "id": "MaE55",
+      "example": 3,
+      "previous_grades": [
+        "6"
+      ],
+      "reviewed_grades": [
+        "6"
+      ],
+      "previous_codes": [
+        "6.EE.A.3"
+      ],
+      "reviewed_codes": [
+        "6.EE.A.3",
+        "6.EE.B.7"
+      ],
+      "reason": "Combine like terms using equivalent expressions, then solve px=q with a nonnegative rational solution. Both steps are grade 6."
+    }
+  ],
+  "provisional": [
+    {
+      "id": "MaE26",
+      "example": 2,
+      "grades": [
+        "6"
+      ],
+      "reason": "The expression (1/3)×a can be written a/3. This is primarily grade 6 expression writing. Calling it a ratio without naming two quantities makes the prompt ambiguous; retain grade 6 provisionally."
+    },
+    {
+      "id": "MaE35",
+      "example": 1,
+      "grades": [
+        "4"
+      ],
+      "reason": "The question omits weights on the opposite side of the scale. Grade 4 multistep whole-number modeling is provisional, inferred from the explanatory answer; the incomplete task does not support a firm grade assignment."
+    },
+    {
+      "id": "MaE39",
+      "example": 1,
+      "grades": [
+        "HS"
+      ],
+      "reason": "Exponential expressions support an HS tag, but 'repeated 6 times' versus 'repeated 64 times' and the missing value/domain of x leave the comparison underspecified."
+    },
+    {
+      "id": "MaE39",
+      "example": 3,
+      "grades": [
+        "HS"
+      ],
+      "reason": "Linear versus exponential comparison is high-school content. The starting amount for doubling and the comparison horizon are not specified, so the supplied unconditional answer cannot certify a fully defined task."
+    },
+    {
+      "id": "MaE41",
+      "example": 3,
+      "grades": [
+        "HS"
+      ],
+      "reason": "A quadratic needs a restricted domain to have an inverse function. No restriction is specified. HS inverse-function standards support the provisional band, but the item is incomplete."
+    },
+    {
+      "id": "MaE42",
+      "example": 3,
+      "grades": [
+        "HS"
+      ],
+      "reason": "Do not assume the two people took the same number of rides. As written, 10+2x=6+3y is one constraint on two independent ride counts. Formal modeling of viable pairs is a high-school best fit; numerical trial pairs are possible earlier. The former grade 8 simultaneous-equations code assumed an unstated second constraint."
+    },
+    {
+      "id": "MaE42",
+      "example": 4,
+      "grades": [
+        "6"
+      ],
+      "reason": "The gear prompt supports grade 6 ratio reasoning, but the source answer and incorrect response discuss an unrelated y=7x+5 pattern. Grade 6 follows the question provisionally; the record needs author review."
+    },
+    {
+      "id": "MaE44",
+      "example": 1,
+      "grades": [
+        "5"
+      ],
+      "reason": "First-quadrant coordinate reading is grade 5. The listed points follow y=2x+1, which contradicts the claim that the line starts at (0,0). Grade is based on reading the listed points."
+    },
+    {
+      "id": "MaE48",
+      "example": 4,
+      "grades": [
+        "6"
+      ],
+      "reason": "The intended concept is grade 6 variable meaning. The source assumes nonnegative integer values without stating a domain. Over real numbers the condition gives c<5, with no nonnegative lower bound; provisional grade 6 does not validate that answer."
+    }
+  ],
+  "source_issues": [
+    {
+      "key": "MaE03:3",
+      "note": "Stored correct answer 0.05 is incorrect: 5^(-2)=1/25=0.04."
+    },
+    {
+      "key": "MaE07:1",
+      "note": "Stored correct answer 4/8=1/4 is incorrect; 4/8=1/2."
+    },
+    {
+      "key": "MaE14:1",
+      "note": "Stored incorrect answer 2/3 is mathematically equivalent to the stored correct answer 8/12."
+    },
+    {
+      "key": "MaE14:2",
+      "note": "Stored incorrect answer 3/1 is mathematically equivalent to the stored correct answer 3."
+    },
+    {
+      "key": "MaE26:1",
+      "note": "Stored correct rate $3 per 9 balloons equals $1/3 per balloon, not $2/3. One valid integer representation is $2 per 3 balloons."
+    },
+    {
+      "key": "MaE27:4",
+      "note": "The source conversion is reversed. 120 cups is 30 US customary quarts, not 480."
+    },
+    {
+      "key": "MaE29:4",
+      "note": "The correct whole is $20/0.8=$25. The stored correct answer $400 is wrong and the stored incorrect answer $25 is numerically correct."
+    },
+    {
+      "key": "MaE36:3",
+      "note": "The stated subtraction is $24.03−$1.53=$22.50; the stored division and $15.7 are incorrect."
+    },
+    {
+      "key": "MaE44:4",
+      "note": "B=76 gives N=20 in B=4(N−1). The source substitutes 76 for N and reports 300; the stored incorrect response finds 20."
+    },
+    {
+      "key": "MaE46:3",
+      "note": "a=28+b implies a>b for real numbers. The stored correct choice '(iv) you cannot tell' is incorrect."
+    },
+    {
+      "key": "MaE52:3",
+      "note": "m=-1 is correct, but the check writes -3−3 rather than -1−3."
+    }
+  ]
+}
