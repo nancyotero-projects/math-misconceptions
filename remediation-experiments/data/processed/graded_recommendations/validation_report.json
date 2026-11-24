@@ -1,0 +1,27 @@
+{
+  "source_rows": 55,
+  "canonical_misconceptions": 55,
+  "diagnostic_examples": 220,
+  "recommendations": 220,
+  "recommendation_examples": 220,
+  "grade_alignments": 440,
+  "covered_repository_ids": 50,
+  "uncovered_repository_ids": [
+    "MaE17",
+    "MaE19",
+    "MaE22",
+    "MaE29",
+    "MaE30"
+  ],
+  "workbook_sheets": [
+    "Recommendations",
+    "Grade alignment",
+    "ID mapping",
+    "Change log",
+    "Readme"
+  ],
+  "canonical_sha256": "ae94eff52a2887b8e96682b4e384d904fcc557ef9db964f90c2e42fab71b4482",
+  "workbook_sha256": "394e716ce223f1a364f602e9108c077b9f71be508412a4ed5152a63a0b8fe37d",
+  "answer_policy": "No answers inferred from prose. Empty compatibility answer fields mean not separately structured, not an empty answer.",
+  "diagnosis_policy": "student_work_pattern is built from canonical diagnostics, not invented recommendation responses."
+}
